@@ -17,3 +17,6 @@ G.add_node("CN6", name="BEIBU-GULF INTERNATIONAL CONTAINER TERMINAL")
 G.add_node("KR1", name="INCHEON CONTAINER TERMINAL")
 G.add_node("KR2", name="BUSAN TERMINALS")
 G.add_node("JP1", name="HIBIKI CONTAINER TERMINAL")
+
+for node, data in G.nodes(data=True):
+    print(f"Node: {node}, Name: {data['name']}")
